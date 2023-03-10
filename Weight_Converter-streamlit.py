@@ -24,8 +24,8 @@ def convert_weight(weight, unit):
         pounds = weight / 0.453592
         kg = weight
 
-    message = f'{round(kg, 2)}  KGrams\n {round(stones, 2)}  Stones\n {round(pounds, 2)}  Pounds'
-    st.success(message)
+    message = f'{round(kg, 2)} KGrams\n{round(stones, 2)} Stones\n{round(pounds, 2)} Pounds'
+    st.text(message)
 
 st.title('Weight Converter')
 
