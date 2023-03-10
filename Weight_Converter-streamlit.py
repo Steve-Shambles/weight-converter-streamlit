@@ -24,10 +24,12 @@ def convert_weight(weight, unit):
         pounds = weight / 0.453592
         kg = weight
 
-    message = f'{round(kg, 2)} kgrams\n{round(stones, 2)} stones\n{round(pounds, 2)} pounds    '
+    message = f'{round(kg, 2)} kgrams\n
+               '{round(stones, 2)} stones\n
+               '{round(pounds, 2)} pounds    '
     st.success(message)
 
-st.title('Weight Convert')
+st.title('Weight Converter')
 
 weight = st.text_input('Enter weight:')
 unit = st.selectbox('Select unit:', ('stones', 'pounds', 'kgrams'))
